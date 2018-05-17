@@ -1,0 +1,26 @@
+{
+  "name": "es6-design-patterns",
+  "version": "1.0.0",
+  "description": "Example of using design patterns using es6",
+  "main": "index.js",
+  "scripts": {
+    "strategy": "nodemon src/strategy/index.js --exec babel-node",
+    "observer": "nodemon src/observer/index.js --exec babel-node",
+    "decorator": "nodemon src/decorator/index.js --exec babel-node",
+    "build": "npm run clean && babel src --out-dir dist",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "design-patterns"
+  ],
+  "author": "Anindya Dhruba",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.17.4"
+  },
+  "dependencies": {
+    "rimraf": "^2.6.2"
+  }
+}
