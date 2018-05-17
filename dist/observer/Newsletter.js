@@ -31,8 +31,14 @@ var Newsletter = function () {
 		key: "send",
 		value: function send() {
 			this.subscribes.forEach(function (subscriber) {
-				return console.log("Sent newsletter to " + subscriber.email);
+				return subscriber.update();
 			});
+		}
+	}, {
+		key: "addBlogPost",
+		value: function addBlogPost() {
+			// ... add blog post
+			this.send();
 		}
 	}]);
 

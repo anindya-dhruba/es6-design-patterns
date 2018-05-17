@@ -21,4 +21,4 @@ newsletter.add(subscriber2);
 newsletter.add(subscriber3);
 newsletter.remove(subscriber2);
 
-newsletter.send();
+newsletter.addBlogPost();

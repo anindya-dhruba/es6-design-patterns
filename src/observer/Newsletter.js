@@ -12,7 +12,12 @@ class Newsletter {
 	}
 
 	send() {
-		this.subscribes.forEach(subscriber => console.log(`Sent newsletter to ${subscriber.email}`))
+		this.subscribes.forEach(subscriber => subscriber.update());
+	}
+
+	addBlogPost() {
+		// ... add blog post
+		this.send();
 	}
 }
 
